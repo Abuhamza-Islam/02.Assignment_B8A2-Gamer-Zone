@@ -129,9 +129,52 @@ ul li a {
 .header-banner img{
     height: 500px;
 }
+/* header style finish------------------------------------------------------ */
+.content-text{
+    text-align: center;
+    padding: 10px;
+}
+.image-content {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border: 1px solid black;
+    padding:0% 10%;
+  }
+  
+  .img-content {
+    position: relative;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .img-content img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .play-button {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: white;
+    pointer-events: none;
+  }
+  
+  .img-content:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid red;
+    border-radius: 10px;
+  }
+  
+  .img-content:hover .play-button {
+    display: block;
 
-
-
+  }
+  
 
 
 
@@ -206,4 +249,11 @@ ul li a {
            height: 100%;
            padding-left: 10%;
     }
+/* header section style finish ---------------------------------- */
+.image-content {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    padding:0% 10%;
+  }
 }
