@@ -26,7 +26,7 @@ nav {
     font-size: 50px;
 }
 
-#Pink-color {
+.Pink-color {
     color: #FF42A5;
 }
 
@@ -132,12 +132,12 @@ ul li a {
 /* header style finish------------------------------------------------------ */
 .content-text{
     text-align: center;
+    margin: 8% 0% 2% 0%;
     padding: 10px;
 }
 .image-content {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    border: 1px solid black;
     padding:0% 10%;
   }
   
@@ -174,7 +174,59 @@ ul li a {
     display: block;
 
   }
+  /* content-section style end here----------------------------------- */
+/* .anniversary-content{
+        border: 1px solid black;
+        display: flex;
+  }
+  .anniversary-text{
+    border: 1px solid black;
+    width: 50%;
+  }
+  .anniversary-img{
+    display: flex;
+    border: 1px solid black;
+    width: 50%;
+  }
+  .small-img{
+    position: relative;
+    transform: scale(10px);
+  }
+   */
+
+
+   .anniversary-content {
+   
+    display: flex;
+}
+
+.anniversary-text {
   
+    width: 50%;
+    padding:10%;
+}
+
+.anniversary-img {
+    display: flex;
+   
+    width: 50%;
+    position: relative; /* Added this */
+}
+
+.small-img {
+    position: absolute; /* Changed this */
+    bottom: 0%; /* Added this */
+    left: -3%; /* Added this */
+    width: 27%; /* Adjust this to the desired size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.big-img {
+    padding: 10%;
+    width: 80%;
+    height: 100%;
+}
+
 
 
 
@@ -217,11 +269,11 @@ ul li a {
 
     
 
-    .header-section{
+    .header-section,{
         flex-direction: column-reverse;
         border: 1px solid black;
     }
-    .header-text{
+    .header-text,.anniversary-text{
         border: 1px solid black;        
        flex-wrap: nowrap;
        font-size: 133%;
@@ -244,7 +296,7 @@ ul li a {
     border: 1px solid black;
     margin-left: 10px;
   }
-    .header-banner img{
+    .header-banner img,.anniversary-img{
            width: 100%;
            height: 100%;
            padding-left: 10%;
@@ -256,4 +308,18 @@ ul li a {
     border: 1px solid black;
     padding:0% 10%;
   }
+  /* content-section style finish here------------------------------- */
+ 
+/* .anniversary-content{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+} */
+.anniversary-content{
+    display: flex;
+    flex-direction: column;
+}
+
+
 }
