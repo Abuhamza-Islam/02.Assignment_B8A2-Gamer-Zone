@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
      color: black;
-     background-color: red;
 }
 
 body, html {
@@ -76,10 +75,10 @@ ul li a {
     font-size: 30px;
 }
 
-/* navbar style finish */
+/* navbar style finish-------------------------------- */
 .header-section{
     display: flex;
-    justify-content:space-between;
+    justify-content:space-between; 
     background-color: rgb(224, 241, 245);
     
 }
@@ -98,6 +97,24 @@ ul li a {
             background: linear-gradient(to bottom, #F948B2 0%, #B352D8 43%,#B951D6 52%,#8758F1 100%);         
             background-clip: text;
             color: transparent;
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px 0px;
+}
+.btn-primary, .btn-secondary{
+    text-align: center;
+    background-color: #FF42A5;
+    color: white;
+    border-radius: 15px;
+    padding: 1% 11%;
+    font-size: 15px;
+}
+.btn-secondary{
+    background-color: #4EC5F7;
+
 }
 #header-ul{
     list-style: none;
@@ -124,15 +141,15 @@ ul li a {
 
 
 /* Responsive styles */
-@media screen and (max-width: 800px) {
-    nav {
+@media screen and (max-width: 768px) {
+    nav {       
         flex-direction: column;
         text-align: center;
         height: auto;
         padding: 10px;
         font-size: 30px;
-        margin: 0 0%;
         box-shadow: none; /* Remove box shadow for smaller screens */
+      
     }
     
     .logo {
@@ -154,4 +171,39 @@ ul li a {
         font-size: 30px;
     }
     /* nav bar style finish */
+
+    
+
+    .header-section{
+        flex-direction: column-reverse;
+        border: 1px solid black;
+    }
+    .header-text{
+        border: 1px solid black;        
+       flex-wrap: nowrap;
+       font-size: 133%;
+       width: 100%;
+       height: auto;
+       padding-left: 23%;
+    }
+    .btn{
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+    }
+    
+    .bold{
+        font-size: 30px;
+    }
+   
+  .header-banner{
+    width: 100%;
+    border: 1px solid black;
+    margin-left: 10px;
+  }
+    .header-banner img{
+           width: 100%;
+           height: 100%;
+           padding-left: 10%;
+    }
 }
