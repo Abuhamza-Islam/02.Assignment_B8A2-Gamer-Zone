@@ -269,7 +269,7 @@ ul li a {
 
     
 
-    .header-section,{
+    .header-section{
         flex-direction: column-reverse;
         border: 1px solid black;
     }
