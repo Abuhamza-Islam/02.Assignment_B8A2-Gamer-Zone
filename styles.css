@@ -290,7 +290,83 @@ ul li a {
     margin: 0; /* Removes default margin from the paragraph */
 }
 
+/* games section style finish */
+/* footer style */
+footer {
+    background-color: #0B0223;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
 
+.footer-head h1 {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-head img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.Pink-color {
+    color: #ff69b4;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 10px;
+}
+
+.footer-content li {
+    margin: 5px 0;
+}
+
+.footer-content a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-content a:hover {
+    color: #ff69b4;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.fa-facebook-f,.fa-linkedin{
+    color: rgb(96, 157, 237);
+}
+.fa-square-instagram,.fa-apple{
+    color: white;
+}
+
+.footer-logo i {
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s;
+    transition: transform 0.3s ease;
+}
+
+.footer-logo i:hover {
+    color: #ff69b4;
+    transform: scale(2.05);
+    
+}
 
 
 
@@ -449,5 +525,16 @@ ul li a {
 .careers-btn{
     width: 100%;   
 }
+/* footer section start */
+.footer-content {
+    flex-direction: column;
+}
 
+.footer-content ul {
+    margin: 10px 0;
+}
+
+.footer-logo i {
+    margin: 5px;
+}
 }
