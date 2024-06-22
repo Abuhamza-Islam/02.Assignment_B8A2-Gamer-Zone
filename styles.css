@@ -175,26 +175,6 @@ ul li a {
 
   }
   /* content-section style end here----------------------------------- */
-/* .anniversary-content{
-        border: 1px solid black;
-        display: flex;
-  }
-  .anniversary-text{
-    border: 1px solid black;
-    width: 50%;
-  }
-  .anniversary-img{
-    display: flex;
-    border: 1px solid black;
-    width: 50%;
-  }
-  .small-img{
-    position: relative;
-    transform: scale(10px);
-  }
-   */
-
-
    .anniversary-content {
    
     display: flex;
@@ -226,6 +206,126 @@ ul li a {
     width: 80%;
     height: 100%;
 }
+/* career-section start form herer --------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.careers-section {
+    background-color: #FF42A5;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; /* Added to manage gap between columns */
+}
+
+.careers-section-text {
+    display: grid;
+    grid-template-rows: auto 1fr; /* Adjusted to accommodate content */
+    gap: 10px; /* Added to manage gap between rows */
+}
+
+.careers-section-top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Added to manage gap between children */
+}
+
+.careers-section-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; /* Added to manage gap between columns */
+}
+
+.careers-section-bottom-1,
+.careers-section-bottom-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Added to manage gap between paragraphs */
+}
+.careers-btn{
+    text-align: center;
+    border-radius: 15px;
+    padding: 1% 11%;
+    font-size: 15px;
+    width: 60%;
+
+    background-color: white;
+    color:  #FF42A5;
+}
+.carrers-section-img {
+    height: 100%; /* Changed to take full height of the grid cell */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrers-section-img img {
+    height: auto; /* Adjusted to maintain aspect ratio */
+    width: 100%; /* Adjusted to fill the parent container */
+    max-width: 100%; /* Limited maximum width */
+    max-height: 100%; /* Limited maximum height */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -309,17 +409,19 @@ ul li a {
     padding:0% 10%;
   }
   /* content-section style finish here------------------------------- */
- 
-/* .anniversary-content{
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-} */
+
 .anniversary-content{
     display: flex;
     flex-direction: column;
 }
+/* anniversary style end ------------------------------------------------------- */
 
+.careers-section{
+    display: flex;
+    flex-direction: column;
+}
+.careers-btn{
+    width: 100%;   
+}
 
 }
