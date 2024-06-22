@@ -21,13 +21,12 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
 
-
 .logo {
     font-size: 50px;
 }
 
 #Pink-color {
-   color: #FF42A5;
+    color: #FF42A5;
 }
 
 .menu ul {
@@ -73,4 +72,36 @@ ul li a {
     color: red;
     margin: 0 5px;
     font-size: 30px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 10px;
+        font-size: 30px;
+        margin: 0 0%;
+        box-shadow: none; /* Remove box shadow for smaller screens */
+    }
+    
+    .logo {
+        margin-bottom: 10px;
+        font-size: 80px;
+    }
+    
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    ul li {
+        margin: 5px 0;
+    }
+
+    .Contacts-btn {
+        justify-content: center;
+        font-size: 30px;
+    }
 }
